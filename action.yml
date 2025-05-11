@@ -118,6 +118,7 @@ runs:
       run: |
         mkdir -p ui/standalone/out/_next/static/css/_next/static/media
         cp -r ui/standalone/out/_next/static/media/* ui/standalone/out/_next/static/css/_next/static/media/
+      shell: bash
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
