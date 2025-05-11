@@ -114,6 +114,10 @@ runs:
       run: touch ./standalone/out/.nojekyll
       shell: bash
 
+    - name: Fix font paths for GitHub Pages
+      run: |
+        mkdir -p ui/standalone/out/_next/static/css/_next/static/media
+        cp -r ui/standalone/out/_next/static/media/* ui/standalone/out/_next/static/css/_next/static/media/
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:

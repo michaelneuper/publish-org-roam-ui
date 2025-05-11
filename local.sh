@@ -43,3 +43,6 @@ fi
 mv out ../../
 popd
 popd
+
+mkdir -p out/_next/static/css/_next/static/media
+cp -r out/_next/static/media/* out/_next/static/css/_next/static/media
